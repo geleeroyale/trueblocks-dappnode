@@ -1,0 +1,19 @@
+version: "3.5"
+services:
+  trueblocks.public.dappnode.eth:
+    build: .
+    image: "trueblocks.public.dappnode.eth:0.0.1"
+    environment:
+      TB_SETTINGS_DEFAULTCHAIN: mainnet
+      TB_CHAINS_MAINNET_RPCPROVIDER: "http://erigon.dappnode:8545"
+      TB_SETTINGS_CACHEPATH: /cache
+      TB_SETTINGS_INDEXPATH: /unchained
+    restart: unless-stopped
+    ports:
+      - "8085:8080"
+    volumes:
+      - "cache:/cache"
+      - "unchained:/unchained"
+volumes:
+  cache: {}
+  unchained: {}

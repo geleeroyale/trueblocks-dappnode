@@ -1,0 +1,12 @@
+{
+  "name": "trueblocks.public.dappnode.eth",
+  "version": "0.0.1",
+  "description": "TrueBlocks packaged for DAppNode",
+  "type": "service",
+  "author": "geleeroyale",
+  "categories": ["Developer tools"],
+  "links": {
+    "homepage": "https://trueblocks.io"
+  },
+  "license": "GPL-3.0"
+}
